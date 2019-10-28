@@ -58,4 +58,14 @@ Setting up automated deployment within the Azure portal is very easy. Navigate b
 
 Once there is a successful deployment go back to Overview for your app service within the Azure portal and click browse. This will navigate you to your app services webpage, which should redirect to the Wordpress installation.
 
+Follow the prompts for the intallation. When settings up the db connection use the same host, username, and password values you used to connect to the DB earlier. Alternatively for a more secure option create a new user with access only to the wordpress database you created, and use that for the setup.
+
+Click continue. If the connection failes it is most likely due to a MySQL firewall issue, like we experienced earlier. Navigate back to the firewall rules page and turn on "Allow access to Azure services."
+
+After updating the firewall rule the installation should run successfully. You can then create a wordpress user and finish the setup.
+
+You now have a functioning Wordpress installation on Azure!
+
+Let me know if you have any questions in the comments, I'd love to work through some problems with you.
+
 
