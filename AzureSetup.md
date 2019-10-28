@@ -50,3 +50,12 @@ If the connection fails the most likely reason is you need to add a firewall rul
 Once you have a connection open the query window and execute 
 CREATE DATABASE **yourWordPressDbNameHere**;
 
+I will be using github integration to handle my deployments. If you will not be using github you can use a standard FTP client to copy the files over to the wwwroot folder of your app service. The FTP login details can be found in the publish profile for your app service. To download the publish profile open your app service in the Azure portal and click the button here:
+
+Before starting this I created a repository for my website on github. After that I used the Github client to clone the repo to my local machine. Once cloned I copied the Wordpress installation files into the root directory of my git repo and pushed back to github.
+
+Setting up automated deployment within the Azure portal is very easy. Navigate back to your App Service and click "Deployment Center" from the menu. Once there select github as your source control, click next, click App Service build service, click next, navigate to your repo using the drop downs, then next, and finish. You now have automated deployment set up. Wait a few minutes and refresh the page to ensure a valid comit was pulled and deployed successfully.
+
+Once there is a successful deployment go back to Overview for your app service within the Azure portal and click browse. This will navigate you to your app services webpage, which should redirect to the Wordpress installation.
+
+
