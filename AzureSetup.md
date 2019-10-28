@@ -66,6 +66,6 @@ After updating the firewall rule the installation should run successfully. You c
 
 You now have a functioning Wordpress installation on Azure!
 
-Let me know if you have any questions in the comments, I'd love to work through some problems with you.
+Let me know if you have any questions in the comments, I'd love to work through some problems with you. :)
 
 
