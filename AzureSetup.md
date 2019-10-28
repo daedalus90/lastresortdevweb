@@ -68,4 +68,12 @@ You now have a functioning Wordpress installation on Azure!
 
 Let me know if you have any questions in the comments, I'd love to work through some problems with you. :)
 
+### Fixing HTTPS issues.
+After my inital deployment my website was working in some browsers but consisently failed to load all CSS and JS files in Safari due to insecure content errors. The underlying issue is when loading the webpage over HTTPS any files attempting to load from HTTP would be blocked. To fix this you need to change your site address in wordpress settings to contain https, however this alone can cause infinite redirect errors. Here are some steps to try to fix various HTTPS issues when running wordpress on an Azure Linux App Service
+
+- Enable HTTPS only in app service
+- Update site and wordpress URLs to contain HTTPS
+- Create/Update .htaccess with rewrite rules
+- Update wp-config - https://wordpress.org/support/topic/https-when-using-wordpress-on-linux-azure-web-app/
+
 
