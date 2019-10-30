@@ -77,3 +77,6 @@ After my inital deployment my website was working in some browsers but consisent
 - Update wp-config - https://wordpress.org/support/topic/https-when-using-wordpress-on-linux-azure-web-app/
 
 
+### Setting up custom domain
+
+
